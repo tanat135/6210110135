@@ -13,17 +13,24 @@
        color:  red;
        background-color:aqua;
    }
-.maingame{
+
+    
+
+@media only screen and (max-width:2100px) {
+    body {
+      background-color: lightblue;
+    }
+
+  .maingame{
     background-color:darkcyan;
-    margin-left: 10em;
-    font-size: larger;
     font-weight: 400;
-    margin-right: 45em;
     color: bisque;
+    margin: auto;
+    justify-content:space-around ;
 }
 .main{
     background-color:darksalmon;
     margin-left: 10em;   
     margin-right: 17em;
-    
+}
 }

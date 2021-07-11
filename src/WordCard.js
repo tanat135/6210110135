@@ -36,17 +36,22 @@ export default function WordCard(props){
         }
     }
 
-
+    const mainclass = `manu ${state.completed ? 'inV': " "}`
+    
 
     return(
-        <div>
-            <div className="main">
+        <div className="contain">
+            <div className="attmp">
+                <h3>You attempt: {state.attempt}</h3>
+            </div>
+            <div className={mainclass}>
              {
                 state.chars.map((c, i) => 
                 <CharacterCard value={c} key = {i} activationHandler ={activationHandler} attempt={state.attempt}/>
                 )
             }
             </div>
+            
         </div>
 
     )
