@@ -8,7 +8,9 @@ const randomElement = _.sample(word);
 function App() {
   return (
     <div>
-      
+      <div className="maingame"> 
+            <h1>Game "guess the word"</h1>
+      </div>
      <WordCard value={randomElement}/>
       
     </div>
