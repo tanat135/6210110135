@@ -9,10 +9,11 @@ function App() {
   return (
     <div>
       <div className="maingame"> 
-            <h1>Game "guess the word"</h1>
-      </div>
-     <WordCard value={randomElement}/>
+            <h1><t>   Game "guess the word"</t></h1>
+      </div> 
       
+     <WordCard value={randomElement}/>
+     
     </div>
   );
 }

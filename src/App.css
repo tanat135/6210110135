@@ -6,7 +6,7 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 1em;
     user-select: none;
-    
+    background-color: antiquewhite;
    }
 
    .activeCard {
@@ -14,7 +14,16 @@
        background-color:aqua;
    }
 .maingame{
-    color: brown;
+    background-color:darkcyan;
     margin-left: 10em;
     font-size: larger;
+    font-weight: 400;
+    margin-right: 45em;
+    color: bisque;
+}
+.main{
+    background-color:darksalmon;
+    margin-left: 10em;   
+    margin-right: 17em;
+    
 }
