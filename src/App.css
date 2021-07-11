@@ -22,15 +22,16 @@
     }
 
   .maingame{
+    justify-content:center ;
     background-color:darkcyan;
     font-weight: 400;
-    color: bisque;
-    margin: auto;
-    justify-content:space-around ;
+    color: bisque;;
+    
 }
 .main{
     background-color:darksalmon;
     margin-left: 10em;   
     margin-right: 17em;
+    justify-content:center;
 }
 }
