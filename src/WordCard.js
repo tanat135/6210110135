@@ -4,10 +4,10 @@ import _, { attempt } from 'lodash';
 
 
 const prepareStateFromWord = given_word =>{
-    let word = given_word.toUpperCase()
-    let chars = _.shuffle(Array.from(word))
+    let randomElement = given_word.toUpperCase()
+    let chars = _.shuffle(Array.from(randomElement))
     return {
-        word,
+        randomElement,
         chars,
         attempt: 1,
         guess: '',
@@ -24,9 +24,8 @@ export default function WordCard(props){
 
         let guess = state.guess + c
         setState({...state, guess})
-
-        if(guess.length == state.word.length){
-            if(guess == state.word){
+        if(guess.length == state.randomElement.length){
+            if(guess == state.randomElement){
                 console.log('yeah!')
                 setState({...state, completed: true})
             }else{
@@ -36,6 +35,8 @@ export default function WordCard(props){
             
         }
     }
+
+
 
     return(
         <div>
